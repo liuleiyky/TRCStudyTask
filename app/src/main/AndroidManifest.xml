@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.liul.trc_study_task">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <application
+        android:name=".crash.YjdwApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".scroll.ScrollActivity" />
+        <activity android:name=".memoryleak.MemoryLeakActivity" />
+        <activity android:name=".customview.CustomViewActivity" />
+        <activity android:name=".remoteview.RemoteViewActivity" />
+
+        <receiver android:name=".MyAppWidgetProvider1">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="click_action" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_provider_info_info" />
+        </receiver>
+
+        <activity android:name=".anim.AnimationActivity" />
+        <activity android:name=".window.WindowActivity" />
+        <activity android:name=".contentprivider.ContentProviderActivity" />
+
+        <!-- <provider -->
+        <!-- android:name=".contentprivider.WfxwProvider" -->
+        <!-- android:authorities="com.liul.trc_study_task.WfxwProvider" /> -->
+
+        <activity android:name=".handler.HandlerActivity" />
+        <activity android:name=".mvp.BookShowActivity" />
+        <activity android:name=".thread.ThreadActivity" />
+        <activity android:name=".bitmap.CacheActivity" />
+        <activity android:name=".crash.CrashCaughtActivity">
+        </activity>
+        <activity android:name=".socket.SocketActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".socket.TcpServerService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

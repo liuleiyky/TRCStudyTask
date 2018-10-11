@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/trc_study_opengl" />
+            <option value="$PROJECT_DIR$/trc_study_task_1" />
+            <option value="$PROJECT_DIR$/trc_study_task_2" />
+            <option value="$PROJECT_DIR$/trc_study_task_3" />
+            <option value="$PROJECT_DIR$/trc_study_task_4" />
+            <option value="$PROJECT_DIR$/trc_study_task_5" />
+            <option value="$PROJECT_DIR$/trc_study_task_6" />
+            <option value="$PROJECT_DIR$/trc_study_task_7" />
+            <option value="$PROJECT_DIR$/trc_study_task_8" />
+            <option value="$PROJECT_DIR$/trc_study_task_common" />
+            <option value="$PROJECT_DIR$/trc_study_task_mediarecorder" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

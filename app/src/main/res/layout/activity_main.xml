@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.liul.trc_study_task.scroll.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray">
+
+    <Button
+        android:id="@+id/btnAudioRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="录音" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="播放音乐"/>
+
+    <Button
+        android:id="@+id/btnVideoRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="录视频" />
+
+    <Button
+        android:id="@+id/btnOpenGL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OpenGL绘制" />
+
+</com.liul.trc_study_task.scroll.MyLinearLayout>

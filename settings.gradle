@@ -1,0 +1,1 @@
+include ':app', ':trc_study_task_1', ':trc_study_task_2', ':trc_study_task_3', ':trc_study_task_4', ':trc_study_task_6', ':trc_study_task_5', ':trc_study_task_7', ':trc_study_task_common', ':trc_study_task_8', ':trc_study_task_mediarecorder', ':trc_study_opengl'

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TRCTask7Activity">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        />
+
+    <Button
+        android:id="@+id/btnStartVR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始录视频"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/surfaceView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnStopVR"/>
+
+    <Button
+        android:id="@+id/btnStopVR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止录视频"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btnStartVR"
+        app:layout_constraintTop_toBottomOf="@+id/surfaceView"/>
+
+    <Button
+        android:id="@+id/btnStartAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始录音频"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnStopAR"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartVR"/>
+
+    <Button
+        android:id="@+id/btnStopAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止录音频"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btnStartAR"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartVR"/>
+
+
+    <Button
+        android:id="@+id/btnMergeVA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="合成"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartAR"/>
+</android.support.constraint.ConstraintLayout>
