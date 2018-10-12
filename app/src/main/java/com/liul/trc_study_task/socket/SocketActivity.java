@@ -112,12 +112,6 @@ public class SocketActivity extends AppCompatActivity {
         adapter = new MessageAdapter();
         listView.setAdapter(adapter);
 
-        try {
-            HttpURLConnection connect= (HttpURLConnection) new URL("").openConnection();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
     }
 
     @Override
