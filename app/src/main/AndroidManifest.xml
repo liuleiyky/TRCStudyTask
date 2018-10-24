@@ -55,20 +55,24 @@
         <activity android:name=".mvp.BookShowActivity" />
         <activity android:name=".thread.ThreadActivity" />
         <activity android:name=".bitmap.CacheActivity" />
-        <activity android:name=".crash.CrashCaughtActivity">
+        <activity android:name=".crash.CrashCaughtActivity" />
+        <activity android:name=".socket.SocketActivity" />
+
+        <service
+            android:name=".socket.TcpServerService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".okhttp.OkhttpActivity"></activity>
+        <activity android:name=".rxjava.RxJavaActivity">
         </activity>
-        <activity android:name=".socket.SocketActivity">
+        <activity android:name=".retrofit.RetrofitActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <service
-            android:name=".socket.TcpServerService"
-            android:enabled="true"
-            android:exported="true"></service>
     </application>
 
 </manifest>

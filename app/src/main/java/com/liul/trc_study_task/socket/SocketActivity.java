@@ -112,6 +112,7 @@ public class SocketActivity extends AppCompatActivity {
         adapter = new MessageAdapter();
         listView.setAdapter(adapter);
 
+
     }
 
     @Override
