@@ -99,6 +99,7 @@ public class PermissionManager {
     public static boolean hasAlertWindowPermission(Context context){
         if(!Settings.canDrawOverlays(context))
             return false;
+
         return true;
     }
 

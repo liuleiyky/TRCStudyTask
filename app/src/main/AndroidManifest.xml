@@ -3,6 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.liul.trc_study_task">
 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -63,16 +68,39 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".okhttp.OkhttpActivity"></activity>
-        <activity android:name=".rxjava.RxJavaActivity">
-        </activity>
-        <activity android:name=".retrofit.RetrofitActivity">
+        <activity android:name=".okhttp.OkhttpActivity" />
+        <activity android:name=".rxjava.RxJavaActivity" />
+        <activity android:name=".retrofit.RetrofitActivity" />
+        <activity android:name=".design.DesignActivity" />
+        <activity android:name=".datepick.DatePickDialogActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".shape.ShapeActivity" />
+        <activity android:name=".notification.NotificationActivity" />
+        <activity android:name=".wifi.WiFiActivity" />
+
+        <receiver
+            android:name=".receiver.BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED" />
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".datepick.Test1Activity" />
+        <activity android:name=".datepick.Test2Activity"></activity>
     </application>
 
 </manifest>

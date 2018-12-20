@@ -37,30 +37,30 @@ public class RxJavaActivity extends AppCompatActivity {
         btnRxJava.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-//                Observable.create(new Observable.OnSubscribe<String>() {
-//                    @Override
-//                    public void call(Subscriber<? super String> subscriber) {
-//                        subscriber.onNext("测试1");
-//                        subscriber.onCompleted();
-//                    }
-//                }).subscribeOn(Schedulers.io())
-//                  .observeOn(AndroidSchedulers.mainThread())
-//                  .subscribe(new Subscriber<String>() {
-//                    @Override
-//                    public void onCompleted() {
-//                        Toast.makeText(RxJavaActivity.this,"完成",Toast.LENGTH_LONG).show();
-//                    }
-//
-//                    @Override
-//                    public void onError(Throwable e) {
-//
-//                    }
-//
-//                    @Override
-//                    public void onNext(String s) {
-//                        Toast.makeText(RxJavaActivity.this,s,Toast.LENGTH_LONG).show();
-//                    }
-//                });
+                Observable.create(new Observable.OnSubscribe<String>() {
+                    @Override
+                    public void call(Subscriber<? super String> subscriber) {
+                        subscriber.onNext("测试1");
+                        subscriber.onCompleted();
+                    }
+                }).subscribeOn(Schedulers.io())
+                  .observeOn(AndroidSchedulers.mainThread())
+                  .subscribe(new Subscriber<String>() {
+                    @Override
+                    public void onCompleted() {
+                        Toast.makeText(RxJavaActivity.this,"完成",Toast.LENGTH_LONG).show();
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onNext(String s) {
+                        Toast.makeText(RxJavaActivity.this,s,Toast.LENGTH_LONG).show();
+                    }
+                });
 
                 //打印一组学生的名字
                 List<Course> list1=new ArrayList<>();
